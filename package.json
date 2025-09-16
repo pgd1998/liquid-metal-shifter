@@ -18,7 +18,6 @@
     "@react-three/postprocessing": "^2.15.11",
     "@use-gesture/react": "^10.3.0",
     "framer-motion": "^10.16.16",
-    "framer-motion-3d": "^12.4.13",
     "leva": "^0.9.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
