@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive liquid metal shape shifter with intelligent AI behavior" />
+    <title>Liquid Metal Shape Shifter</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow: hidden;
+        background: #0a0a0a;
+        color: #ffffff;
+      }
+      
+      #root {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+      
+      .loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        color: #888;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        z-index: 1000;
+      }
+
+      .loading::after {
+        content: '';
+        animation: dots 1.5s infinite;
+      }
+
+      @keyframes dots {
+        0% { content: ''; }
+        33% { content: '.'; }
+        66% { content: '..'; }
+        100% { content: '...'; }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-DSGXcwxh.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/three-DJPBazyj.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-three-zTT3-I0a.js">
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading">Initializing liquid metal intelligence</div>
+    </div>
+  </body>
+</html>

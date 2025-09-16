@@ -1,4 +1,3 @@
-import React from 'react';
 import { useGeometryStore, geometryTypes, GeometryType } from '../store/geometryStore';
 
 export default function GeometrySelector() {

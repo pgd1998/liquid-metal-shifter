@@ -1,26 +1,17 @@
-import React, { useRef, useMemo } from 'react';
+import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
-interface MorphingPolyProps {
+interface MorphingPolyComponentProps {
   position: [number, number, number];
   scale: number;
   material: THREE.Material;
   index: number;
 }
 
-function MorphingPoly({ position, scale, material, index }: MorphingPolyProps) {
+function MorphingPoly({ position, scale, material, index }: MorphingPolyComponentProps) {
   const meshRef = useRef<THREE.Mesh>(null);
 
-  const geometries = useMemo(() => {
-    return {
-      sphere: new THREE.SphereGeometry(1, 16, 16),
-      cube: new THREE.BoxGeometry(1.5, 1.5, 1.5),
-      octahedron: new THREE.OctahedronGeometry(1.2),
-      tetrahedron: new THREE.TetrahedronGeometry(1.3),
-      icosahedron: new THREE.IcosahedronGeometry(1.1)
-    };
-  }, []);
 
   const morphGeometry = useMemo(() => {
     const geo = new THREE.SphereGeometry(1, 16, 16);

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Environment, ContactShadows } from '@react-three/drei';
 import LiquidMetal from './LiquidMetal';
 import Lighting from './Lighting';
