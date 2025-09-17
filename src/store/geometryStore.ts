@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-export type GeometryType = 'metaballs' | 'teardrops' | 'fluidChunks' | 'morphingPoly';
+export type GeometryType = 'metaballs' | 'teardrops' | 'fluidChunks';
 
 interface GeometryState {
   currentGeometry: GeometryType;
@@ -16,5 +16,4 @@ export const geometryTypes = [
   { id: 'metaballs', name: 'Metaballs', description: 'Classic spherical liquid metal' },
   { id: 'teardrops', name: 'Teardrops', description: 'Organic flowing blob shapes' },
   { id: 'fluidChunks', name: 'Fluid Chunks', description: 'Irregular noise-deformed geometry' },
-  { id: 'morphingPoly', name: 'Morphing Poly', description: 'Shape-shifting geometric forms' },
 ] as const;

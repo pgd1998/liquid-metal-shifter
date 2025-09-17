@@ -6,7 +6,6 @@ import { useGeometryStore } from '../store/geometryStore';
 import Metaballs from '../geometries/Metaballs';
 import Teardrops from '../geometries/Teardrops';
 import FluidChunks from '../geometries/FluidChunks';
-import MorphingPolyhedrons from '../geometries/MorphingPoly';
 
 export default function LiquidMetal() {
   const { mouse } = useThree();
@@ -73,8 +72,6 @@ export default function LiquidMetal() {
         return <Teardrops material={material} numBalls={numBalls} />;
       case 'fluidChunks':
         return <FluidChunks material={material} numBalls={numBalls} />;
-      case 'morphingPoly':
-        return <MorphingPolyhedrons material={material} numBalls={numBalls} />;
       default:
         return <Metaballs material={material} numBalls={numBalls} />;
     }
