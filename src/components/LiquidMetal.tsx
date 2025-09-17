@@ -59,6 +59,7 @@ export default function LiquidMetal() {
     }
   }, [viscosity, metallic, roughness, baseColor, emissive, mouseInfluence]);
 
+
   useFrame(() => {
     // Update mouse position
     mousePosition.set(mouse.x * 5, mouse.y * 5, 0);

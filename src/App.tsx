@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Stats } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import Scene from '@components/Scene';
 import LoadingScreen from '@components/LoadingScreen';
 import Controls from '@components/Controls';
@@ -37,7 +37,6 @@ export default function App() {
             minPolarAngle={0}
             maxPolarAngle={Math.PI}
           />
-          <Stats showPanel={0} className="stats" />
         </Suspense>
       </Canvas>
       <Controls />
