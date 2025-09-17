@@ -5,6 +5,7 @@ import Scene from '@components/Scene';
 import LoadingScreen from '@components/LoadingScreen';
 import Controls from '@components/Controls';
 import GeometrySelector from '@components/GeometrySelector';
+import UserGuide from '@components/UserGuide';
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
       </Canvas>
       <Controls />
       <GeometrySelector />
+      <UserGuide />
     </>
   );
 }

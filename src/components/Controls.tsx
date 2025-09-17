@@ -40,23 +40,7 @@ export default function Controls() {
         }}
       />
       
-      <div style={{
-        position: 'fixed',
-        top: '10px',
-        left: '10px',
-        color: '#ffffff',
-        fontSize: '12px',
-        fontFamily: 'monospace',
-        background: 'rgba(0, 0, 0, 0.7)',
-        padding: '8px 12px',
-        borderRadius: '4px',
-        backdropFilter: 'blur(4px)',
-        zIndex: 1000
-      }}>
-        <div>🧠 Neural Intelligence: Active</div>
-        <div>🌊 Fluid Simulation: Running</div>
-        <div>⚡ Real-time Learning: Enabled</div>
-      </div>
+      
     </>
   );
 }
